@@ -21,18 +21,18 @@ Install the following:
 ### Start The App(s)
 1. `git clone 
 2. Rust:
-a. `cd rust`
-b. `cargo run`
+    a. `cd rust`
+    b. `cargo run`
 
 3. Npm-React:
-a. `cd ts`
-b. `npm install` OR `npm ci`
-c. `npm run start`
+    a. `cd ts`
+    b. `npm install` OR `npm ci`
+    c. `npm run start`
 
 4. Java:
-a. `cd java`
-b. `mvn clean package`
-c. `java -jar target/project-0.0.1-SNAPSHOT.jar`
+    a. `cd java`
+    b. `mvn clean package`
+    c. `java -jar target/project-0.0.1-SNAPSHOT.jar`
 
 
 #### Images
