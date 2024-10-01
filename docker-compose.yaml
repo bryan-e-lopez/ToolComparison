@@ -1,0 +1,32 @@
+version: '3.8'
+# Java REST API
+services:
+  java-service:
+    build:
+      context: ./java
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - webnet
+# Rust REST API
+  rust-service:
+    build:
+      context: ./rust
+      dockerfile: Dockerfile
+    ports:
+      - "7000:7000"
+    networks:
+      - webnet
+# TS GUI
+  ts-service:
+    build:
+      context: ./ts
+      dockerfile: Dockerfile
+    ports: 
+      - "3000:3000"
+    networks:
+      - webnet
+# Network not being used 
+networks:
+  webnet:
